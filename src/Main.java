@@ -10,7 +10,7 @@ public class Main {
 
     }
 
-    public static void printThreeWords() {
+    public static void printThreeWords() {// метод printThreeWords()
         System.out.println("Orange");
         System.out.println("Banana");
         System.out.println("Apple");
@@ -18,7 +18,7 @@ public class Main {
     }
 
 
-    public static void checkSumSign() {
+    public static void checkSumSign() {//метод checkSumSign()
         int a;
         int b;
         int c;
@@ -33,7 +33,7 @@ public class Main {
 
     }
 
-    public static void printColor() {
+    public static void printColor() {//метод printColor()
         int value;
         value = 101;
         if (value <= 0) {
@@ -47,7 +47,7 @@ public class Main {
 
     }
 
-    public static void compareNumbers() {
+    public static void compareNumbers() {//метод comparedNumbers()
         int a = 4;
         int b = 6;
         if (a >= b) {
@@ -58,12 +58,16 @@ public class Main {
 
     }
 
-    public static boolean number10To20(int a, int b) {
+    public static boolean number10To20(int a, int b) {// метод принимающий на вход два
+        // целых числа и проверяющий,что их сумма лежит в пределах от 10 до 20(включительно0),
+        // если да- вернуть true,в противном случае -false
         int sum = a + b;
         return sum >= 10 & sum <= 20;
     }
 
-    public static void positiveNumber(int var) {
+    public static void positiveNumber(int var) {//метод,которому в качестве параметра передается
+        // целое число,метод должен передать в консоль ,положительное ли число передали или
+        // отрицательное. Замечание: ноль считаем положительным числом
         if (var >= 0) {
             System.out.println("var положительное число");
         } else {
@@ -72,18 +76,23 @@ public class Main {
 
     }
 
-    public static boolean negativeNumber(int var) {
+    public static boolean negativeNumber(int var) {//метод, которому в качестве параметра передается
+        // целое число. Метод должен вернуть true,если число отрицательное ,и вернуть false если
+        // положительное. Замечание: ноль считается положительным
         return var < 0;
     }
 
-    public static void printString(String str, int i) {
+    public static void printString(String str, int i) {//метод, которому в качестве аргументов
+        // передается строка и число. Метод должен отпечатать в консоль , указанное количество раз
         int c;
         for (c = 0; c < i; c++) {
             System.out.println(str);
         }
     }
 
-    public static boolean leapYear(int n) {
+    public static boolean leapYear(int n) {//метод,который определяет, является ли год високосным,
+        // и возвращает boolean (високосный - true, не високосный - false). Каждый 4-ый год
+        // является високосным,кроме каждого 100-го,при этом каждый 400-ый високосный.
         if (n % 100 != 0 & n % 400 == 0) {
             return true;
         } else if (n % 100 == 0) {
