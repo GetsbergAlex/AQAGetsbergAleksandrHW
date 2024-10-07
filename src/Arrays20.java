@@ -1,4 +1,4 @@
-public class Arrays2{
+public class Arrays20{
     public static void main(String args[]) {
     }
     public static int[] returnArrey(int len, int initialValue) {// написать метод принимающий
