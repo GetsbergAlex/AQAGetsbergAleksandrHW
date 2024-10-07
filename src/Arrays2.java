@@ -1,4 +1,4 @@
-public class retuenArrays {
+public class Arrays2{
     public static void main(String args[]) {
     }
     public static int[] returnArrey(int len, int initialValue) {// написать метод принимающий
